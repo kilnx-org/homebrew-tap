@@ -11,7 +11,7 @@ class Kilnx < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/kilnx-org/kilnx/releases/download/v0.1.2/kilnx_darwin_amd64.tar.gz"
-      sha256 "f3cd993728568a488d9c47336b95bb30bbc0797e7f45063550e5f4b6c413edda"
+      sha256 "9cca458f4d9d9a0631308d4d741262f6492cb13bdc092aa37cbc59b7e70f2c5c"
 
       define_method(:install) do
         bin.install "kilnx"
@@ -19,7 +19,7 @@ class Kilnx < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/kilnx-org/kilnx/releases/download/v0.1.2/kilnx_darwin_arm64.tar.gz"
-      sha256 "060e383e656accd58c3cc0d46376b7260c753f0aeac3714b0ea0f8a2ec48cc5b"
+      sha256 "4da79b9e7f93a7b98510cc87d827ece3778f7ca7cbc23499e506b1f543097f82"
 
       define_method(:install) do
         bin.install "kilnx"
@@ -30,14 +30,14 @@ class Kilnx < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/kilnx-org/kilnx/releases/download/v0.1.2/kilnx_linux_amd64.tar.gz"
-      sha256 "ae28b235dee6a856577a1032b3cfbcf4b03560c224e55420c81535505999c1e5"
+      sha256 "3fbbd92cded4b30b14056eddf94a09acad46a8d49cce16f24f9bb10463807eb0"
       define_method(:install) do
         bin.install "kilnx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/kilnx-org/kilnx/releases/download/v0.1.2/kilnx_linux_arm64.tar.gz"
-      sha256 "826b1206a8c8ced38fcbf38b31024058a4b6a1e8d1170eeb778056e11a0abcf9"
+      sha256 "b3187381e23136ab92e18c5c15d4998d37397560c1ce41046b63f0e4b20a15bd"
       define_method(:install) do
         bin.install "kilnx"
       end
