@@ -5,21 +5,21 @@
 class Kilnx < Formula
   desc "Declarative backend language for the htmx era"
   homepage "https://kilnx.org"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kilnx-org/kilnx/releases/download/v0.1.3/kilnx_darwin_amd64.tar.gz"
-      sha256 "5f84195dc15f26a2338236000a4f9f8f62c7f60956be823ad3ebb43d56b066fa"
+      url "https://github.com/kilnx-org/kilnx/releases/download/v0.1.4/kilnx_darwin_amd64.tar.gz"
+      sha256 "f2b2da72081a932fc2be9fd30a8cae68e71208f93131368e847fb5c1cf782946"
 
       define_method(:install) do
         bin.install "kilnx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kilnx-org/kilnx/releases/download/v0.1.3/kilnx_darwin_arm64.tar.gz"
-      sha256 "e02dfa3a96ec63d5091abc536b48d5b5d0537e727a3188e3b4a0892611bdf2d3"
+      url "https://github.com/kilnx-org/kilnx/releases/download/v0.1.4/kilnx_darwin_arm64.tar.gz"
+      sha256 "9040351e4b3ae63515deb681188a3fbb8d09d00f36c2e20d20b2c437e926a744"
 
       define_method(:install) do
         bin.install "kilnx"
@@ -29,15 +29,15 @@ class Kilnx < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kilnx-org/kilnx/releases/download/v0.1.3/kilnx_linux_amd64.tar.gz"
-      sha256 "2b95179795e9b9bb6fcb9bdb90b9c80ed19a349f2fe2e098088fcc497f5ed805"
+      url "https://github.com/kilnx-org/kilnx/releases/download/v0.1.4/kilnx_linux_amd64.tar.gz"
+      sha256 "374ef01313c9a33930f71f920179b91185685e3a3e929609bae1ff8da5ed58ac"
       define_method(:install) do
         bin.install "kilnx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kilnx-org/kilnx/releases/download/v0.1.3/kilnx_linux_arm64.tar.gz"
-      sha256 "785eb06c3c1a6c46f4f8eb729055251ffaaa185a3837bec571d0cb3b89238148"
+      url "https://github.com/kilnx-org/kilnx/releases/download/v0.1.4/kilnx_linux_arm64.tar.gz"
+      sha256 "0109cc241e277a563edbafffbcb668141162f4a10f4a624209faa5456c788696"
       define_method(:install) do
         bin.install "kilnx"
       end
